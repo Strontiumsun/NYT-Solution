@@ -1,0 +1,22 @@
+#body-container {
+    padding: 15px;
+}
+#custom-header {
+    background-color:#21325a;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+h1 {
+font-weight: bold;
+}
+#footer-container {
+    padding-bottom: 15px;
+}
+#custom-footer {
+    text-align: center;
+    
+}
+

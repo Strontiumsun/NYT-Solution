@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="header-container">
+        <header id="custom-header" class="rounded">
+            <h1><i class="far fa-newspaper"></i> New York Times Search</h1>
+        </header>
+    </div>
+    <div class="container">
+        <form>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-table"></i> Search Parameters
+                </div>
+                <div class="container" id="body-container">
+                    <div class="form-group">
+                        <label for="exampleInput1">Search Term:</label>
+                        <input type="text" class="form-control" id="inputSearchTerm" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInput2">Number of Records to Retrieve:</label>
+                        <select class="form-control" id="inputRecords">
+                            <option>1</option>
+                            <option>5</option>
+                            <option>10</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInput3">Start Year (Optional)</label>
+                        <input type="text" class="form-control" id="inputStartYear" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInput4">End Year (Optional) </label>
+                        <input type="text" class="form-control" id="inputEndYear" placeholder="">
+                    </div>
+                    <button class="btn btn-light" id="search-button"><i class="fas fa-search"></i>
+                        Search</button>
+                    <button type="clear" class="btn btn-light" id="clear-button"><i class="fas fa-trash-alt"></i>
+                        Clear</button>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="card">
+            <div class="card-header"><i class="fas fa-newspaper"></i> Top Articles</div>
+            <div class="container">
+                <div id="results-here"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="footer-container">
+        <hr>
+        <footer id="custom-footer">Made by Izzy, Ky, Nick, Kevin and Scott</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="formtest.js"></script>
+</body>
+
+</html>
